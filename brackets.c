@@ -6,7 +6,7 @@
 /*   By: avan-ni <avan-ni@student.wethinkcode.co.za>+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/18 20:34:02 by avan-ni           #+#    #+#             */
-/*   Updated: 2018/07/18 21:54:13 by avan-ni          ###   ########.fr       */
+/*   Updated: 2018/07/19 13:17:00 by avan-ni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ int main (int argc, char **argv)
 	int j;
 	int error;
 
-	error = 0;
-	count = 0;
 	i = 1;
 	if (argc >= 2)
 	{
 		while (i <= argc - 1)
 		{
 			j = 0;
+			count = 0;
+			error = 0;
 			while (argv[i][j])
 			{
 				if (argv[i][j] == '(' || argv[i][j] == '[' || argv[i][j] == '{')
